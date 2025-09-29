@@ -33,21 +33,15 @@ services:
           property: password
       - key: N8N_USER_FOLDER
         value: /home/render/data
+      - key: N8N_ENCRYPTION_KEY
+        generateValue: true
       - key: N8N_BASIC_AUTH_ACTIVE
         value: "true"
       - key: N8N_BASIC_AUTH_USER
         value: admin
       - key: N8N_BASIC_AUTH_PASSWORD
         generateValue: true
-      - key: N8N_HOST
-        value: n8n-service.onrender.com
       - key: N8N_PROTOCOL
         value: https
       - key: WEBHOOK_URL
         value: https://n8n-service.onrender.com
-      - key: N8N_ENCRYPTION_KEY
-        generateValue: true
-
-databases:
-  - name: n8n-db
-    plan: free
