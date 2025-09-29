@@ -45,3 +45,7 @@ services:
         value: https
       - key: WEBHOOK_URL
         value: https://n8n-service.onrender.com
+
+databases:
+  - name: n8n-db
+    plan: free
